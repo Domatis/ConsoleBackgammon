@@ -152,6 +152,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BackgammonProject.cpp" />
+    <ClCompile Include="GameplayManager.cpp" />
+    <ClCompile Include="Slot.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameplayManager.h" />
+    <ClInclude Include="Slot.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
