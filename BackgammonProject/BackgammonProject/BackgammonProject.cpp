@@ -12,33 +12,11 @@ using namespace std;
 int main()
 {
 	GameplayManager gmanager;
-
-	//gmanager.StartGame();
-
-	srand((unsigned)time(0));
-	int x = rand() % 7;
-
-	cout << x << endl;
-
-	srand((unsigned)time(0));
-	x = rand() % 7;
-
-	cout << x << endl;
-	
-	srand((unsigned)time(0));
-	x = rand() % 7;
-
-	cout << x << endl;
-
-	srand((unsigned)time(0));
-	x = rand() % 7;
-
-	cout << x << endl;
-
-	
 	
 
-    
+	gmanager.StartGame();
+
+ 
 }
 
 

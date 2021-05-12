@@ -1,2 +1,3 @@
-﻿  BackgammonProject.cpp
+﻿  GameplayManager.cpp
+D:\Ders\2.sınıf\Bahar\File Organization\Proje\ConsoleBackgammon\BackgammonProject\BackgammonProject\GameplayManager.cpp(111,20): warning C4018: '<': imzalı/imzasız uyuşmazlığı
   BackgammonProject.vcxproj -> D:\Ders\2.sınıf\Bahar\File Organization\Proje\ConsoleBackgammon\BackgammonProject\Debug\BackgammonProject.exe

@@ -14,6 +14,7 @@ public :
 	void UpdateSlotsForSavedGame();
 	void UpdateTheSlotInfo(string name, int count, slottype t);
 	void PlayTheFirstRound();
+	void DrawtheCurrentTable();
 	// We need reference to filemanager for reading and writing info.
 	string letters[12] = { "A","B","C","D","E","F","G","H","I","J","K","L" };
 	vector <Slot> slots;

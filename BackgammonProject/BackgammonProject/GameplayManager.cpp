@@ -2,6 +2,11 @@
 
 #include <iostream>
 
+#include <stdlib.h> 
+#include <ctime>
+#include <cstdlib>
+
+
 void GameplayManager::StartGame()
 {
 	//Yarým kalmýþ bir oyun var mý kontrol et, yarým kaldýysa o oyunun bilgilerini alýp oyuna öyle devam et deðil ise yeni oyun için hazýrlýk yap.
@@ -35,8 +40,17 @@ void GameplayManager::GameLogic()
 	while (gameOn)
 	{
 		//Oyun döngüsü burada olacak.
+		system("CLS");
+		
+		DrawtheCurrentTable();
+
+		cin.get();
+		
+
+		//Oyunun mevcut durumunun ekrana çizilmesi.
+
+
 		//ilk oyun için zar atma olaylarý burada olmayacak.
-	
 	}
 }
 
@@ -102,8 +116,6 @@ void GameplayManager::UpdateTheSlotInfo(string nm,int cnt,slottype t)
 			slots.at(i).count = cnt;
 			slots.at(i).stype = t;
 		}
-
-
 	}
 }
 
@@ -113,10 +125,77 @@ void GameplayManager::PlayTheFirstRound()
 
 	//Bilgi verilecek, x ve y oyuncusu için zar atýlmasý istenecek.
 
-	cout << "Oyuna Kimin Baslayacaginin Belirlenmesi icin Tekli Zarlarýn Atilmasi" << endl << endl;
-	cout << "X oyuncusu icin atilan zar degeri =   " << endl << endl;
-	cout << "Y oyuncusu icin atilan zar degeri =   " << endl << endl;
-	
+	bool equal = true;
+	int diceX = 0;
+	int diceY = 0;
+
+	while (equal)
+	{
+		srand((unsigned)time(0));
+		 diceX = (rand() % 6) + 1;
+
+		srand((unsigned)rand());
+		 diceY = (rand() % 6) + 1;
+
+		 if (diceX == diceY) equal = true;
+		 else equal = false;
+	}
+
+	cout << "Oyuna Kimin Baslayacaginin Belirlenmesi icin Tekli Zarlarin Atilmasi" << endl << endl;
+	cout << "X oyuncusu icin atilan zar degeri = " << diceX << endl;
+	cout << "Y oyuncusu icin atilan zar degeri = " << diceY << endl << endl;
+
+	if (diceX > diceY) cout << "-----Oyuna X oyuncusu baslayacak-----" << endl << endl;
+	else cout << "-----Oyuna Y oyuncusu baslayacak-----" << endl << endl;
+
+	int x = 0;
+
+	cout << "Devam etmek entera basiniz" << endl;
+	cin.get();
+}
+
+void GameplayManager::DrawtheCurrentTable()
+{
+	//slotlarýn bulunduðu listeden tek tek slotlarý alýp orada ki bilgilere göre, tavla tahtasý çizilecek.
+	//i satýr sayýsý
+	for (int i = 0; i < 12; i++)
+	{
+		if (i == 0)		//ilk satýrýn  yazýlmasý
+		{
+			for (int j = 0; j < 12; j++)
+			{
+				if (j % 2 == 0)
+				{
+					if (j == 6) cout << "   " << letters[j] << "  ";
+					else 
+					cout << "  " << letters[j] << "  ";
+				}
+				else cout << " " << letters[j] << " ";
+			}
+		}
+
+		if (i == 1 || i == 5 ||i == 7 ||i == 11)
+		{
+			for (int j = 0; j < 50; j++)
+			{
+				cout << "-";
+			}
+		} 
+
+		if (i == 2 || i == 4 || i == 8 || i == 10)
+		{
+			for (int j = 0; j < 14; j++)
+			{
+				if (j == 6) cout << "|";
+				else cout << "|   ";
+			}
+		}
+
+		//TODO diðer satýrlarýn yazýlmasýný devam et ve yazýlýrken mevcut slot deðerleri için bilgileri alýp yazýlmasýný saðla.
+
+		cout << endl;
+	}
+
 
 
 }
