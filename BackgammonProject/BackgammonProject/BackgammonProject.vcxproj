@@ -152,10 +152,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BackgammonProject.cpp" />
+    <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="GameplayManager.cpp" />
     <ClCompile Include="Slot.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FileManager.h" />
     <ClInclude Include="GameplayManager.h" />
     <ClInclude Include="Slot.h" />
   </ItemGroup>

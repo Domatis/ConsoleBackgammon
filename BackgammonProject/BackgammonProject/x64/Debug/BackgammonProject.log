@@ -1,0 +1,9 @@
+﻿  BackgammonProject.cpp
+D:\Ders\2.sınıf\Bahar\File Organization\Proje\ConsoleBackgammon\BackgammonProject\BackgammonProject\BackgammonProject.cpp(22,7): warning C4101: 't': yerel değişken başvurusu kaldırıldı
+D:\Ders\2.sınıf\Bahar\File Organization\Proje\ConsoleBackgammon\BackgammonProject\BackgammonProject\BackgammonProject.cpp(27,7): warning C4101: 't': yerel değişken başvurusu kaldırıldı
+  GameplayManager.cpp
+  Slot.cpp
+  Kod Üretiliyor...
+D:\Ders\2.sınıf\Bahar\File Organization\Proje\ConsoleBackgammon\BackgammonProject\BackgammonProject\BackgammonProject.cpp(33,7): warning C4101: 't': yerel değişken başvurusu kaldırıldı
+D:\Ders\2.sınıf\Bahar\File Organization\Proje\ConsoleBackgammon\BackgammonProject\BackgammonProject\GameplayManager.cpp(318): warning C4715: 'GameplayManager::GetSlot': tüm denetim yolları değer döndürmez
+  BackgammonProject.vcxproj -> D:\Ders\2.sınıf\Bahar\File Organization\Proje\ConsoleBackgammon\BackgammonProject\x64\Debug\BackgammonProject.exe

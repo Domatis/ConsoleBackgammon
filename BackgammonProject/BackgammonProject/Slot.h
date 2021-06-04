@@ -13,9 +13,10 @@ public:
 	
 	string name;
 	int count;
+	int layer; //1,2,3
 	slottype stype = neutral;
 
-	Slot(string n,int c,slottype t);
+	Slot(string n,int c,slottype t,int layer);
 	void UpdateSlot(int c,slottype t);
 
 

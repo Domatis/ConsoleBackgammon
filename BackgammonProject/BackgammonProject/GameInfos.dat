@@ -1,0 +1,12 @@
+RoundCount = 9
+Dice 1 = 1
+Dice 2 = 4
+BrokenXNum = 0
+BrokenYNum = 0
+CollectedX = 0
+CollectedY = 0
+BrokenXstate = 0
+BrokenYstate = 0
+CollectXstate = 0
+CollectYstate = 0
+CurrentRound = X
